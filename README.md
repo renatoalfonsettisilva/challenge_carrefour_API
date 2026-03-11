@@ -19,11 +19,6 @@ Instalação
 
 Clone o repositório e instale as dependências:
 
-bash
-
 Execução dos Testes
 Para executar os testes localmente, use o seguinte comando:
 npm test
-
-cd api-tests
-npm install
