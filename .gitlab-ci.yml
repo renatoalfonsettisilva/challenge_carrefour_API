@@ -1,0 +1,15 @@
+stages:
+  - test
+
+test_api:
+  stage: test
+  image: node:latest
+  script:
+    - npm install
+    - npm test
+  artifacts:
+    paths:
+      - reports/     # Pasta onde os relatórios dos testes serão salvos
+  only:
+    - merge_requests
+    - master
